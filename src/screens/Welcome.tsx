@@ -1,6 +1,9 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+
 import styled from 'styled-components/native';
 import backgroundImage from '../assets/bgs/background_v1.png';
 import { theme } from '../constants/theme';
@@ -9,9 +12,12 @@ import PrimaryButton from '../components/Shared/Button/PrimaryButton';
 import BigText from '../components/Shared/Text/BigText';
 import SmallText from '../components/Shared/Text/SmallText';
 import AppContainer from '../layout/AppContainer';
+import { RootStackParamList } from '../navigation/RootStack';
 
 const Welcome: React.FC = () => {
-  const handlePress = () => {};
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+  const handlePress = () => navigation.navigate('Home');
 
   return (
     <AppContainer>

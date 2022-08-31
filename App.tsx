@@ -1,8 +1,6 @@
 import React from 'react';
-import Welcome from './src/screens/Welcome';
+import RootStack from './src/navigation/RootStack';
 
-const App = () => {
-  return <Welcome />;
-};
+const App = () => <RootStack />;
 
 export default App;

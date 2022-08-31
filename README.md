@@ -1,8 +1,44 @@
-# Definitive Guide To Use Styled-Components during a React Native Project
+# Use Styled-Components in your next React Native Project
 
-<img src="./src/assets/Screenshot.jpg" alt="App made with Styled-Components" width="200"/>
+<img src="./src/assets/Screenshot.jpg" alt="App made with Styled-Components" width="220"/>
 
-- [Definitive Guide To Use Styled-Components during a React Native Project](#definitive-guide-to-use-styled-components-during-a-react-native-project)
+> Note: This repository is an example how to use styled-components in your react-native project.
+
+To run this app first clone this repo using:
+
+```bash
+git clone
+```
+
+Then install the dependencies by running:
+
+```bash
+# with npm
+npm install
+
+# with yarn
+yarn
+```
+
+To start the project npm:
+
+```bash
+npm start
+
+npm run android or npm run ios
+```
+
+To start the project yarn:
+
+```bash
+yarn start
+
+yarn android or yarn ios
+```
+
+---
+
+- [Use Styled-Components in your next React Native Project](#use-styled-components-in-your-next-react-native-project)
   - [What is styled-components?](#what-is-styled-components)
   - [Installation](#installation)
 - [Getting Started](#getting-started)

@@ -7,7 +7,7 @@
 To run this app first clone this repo using:
 
 ```bash
-git clone
+git clone https://github.com/iamNilotpal/react-native-with-styled-components.git
 ```
 
 Then install the dependencies by running:

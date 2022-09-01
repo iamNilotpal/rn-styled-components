@@ -13,6 +13,11 @@ import avatar from '../assets/portraits/3.jpg';
 export type RootStackParamList = {
   Welcome: undefined;
   Home: undefined;
+  CardDetails: {
+    image: string;
+    accountNumber: string;
+    totalBalance: string;
+  };
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet } from 'react-native';
-import { theme } from '../../constants/theme';
 
+import { theme } from '../../constants/theme';
 import { TRANSACTIONS } from '../../data/transactions';
 import RegularText from '../Shared/Text/RegularText';
 import Transaction from './Transaction';

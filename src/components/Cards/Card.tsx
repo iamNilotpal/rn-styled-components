@@ -1,10 +1,10 @@
-import { StyleProp, StyleSheet, ViewStyle } from 'react-native';
 import React from 'react';
+import { StyleProp, StyleSheet, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
 
 import background from '../../assets/bgs/background_transparent.png';
-import RegularText from '../Shared/Text/RegularText';
 import { theme } from '../../constants/theme';
+import RegularText from '../Shared/Text/RegularText';
 
 type CardProps = {
   image: string;
@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({
   marginRight,
 }) => {
   return (
-    <Container style={{ marginRight, elevation: 30 }}>
+    <Container style={{ marginRight, elevation: 30 }} activeOpacity={0.8}>
       <Image
         style={[StyleSheet.absoluteFillObject]}
         source={background}
@@ -60,7 +60,7 @@ const Card: React.FC<CardProps> = ({
   );
 };
 
-const Container = styled.View`
+const Container = styled.TouchableOpacity`
   width: 350px;
   height: 230px;
   border-radius: 20px;

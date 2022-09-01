@@ -38,7 +38,7 @@ const RootStack = () => {
             headerShown: true,
             headerTitle: '',
             headerLeft: () => (
-              <Greeting greeting="Welcome," username="Nilotpal" />
+              <Greeting greeting="Welcome back" username="Nilotpal" />
             ),
             headerRight: () => <Profile image={avatar} />,
           }}

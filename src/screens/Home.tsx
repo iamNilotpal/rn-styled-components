@@ -1,13 +1,18 @@
 import React from 'react';
-import { Text } from 'react-native';
 import styled from 'styled-components/native';
 import { theme } from '../constants/theme';
+
+import CardList from '../components/Cards/CardList';
 import AppContainer from '../layout/AppContainer';
+import TransactionList from '../components/Transactions/TransactionList';
 
 const Home: React.FC = () => {
   return (
     <AppContainer>
-      <Container></Container>
+      <Container>
+        <CardList />
+        <TransactionList />
+      </Container>
     </AppContainer>
   );
 };

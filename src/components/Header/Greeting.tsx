@@ -22,8 +22,8 @@ const Greeting: React.FC<GreetingProps> = ({
 }) => {
   return (
     <Container style={itemStyle}>
+      <Username style={usernameStyle}>Hey {username}!</Username>
       <GreetingText style={greetingStyle}>{greeting}</GreetingText>
-      <Username style={usernameStyle}>{username}</Username>
     </Container>
   );
 };
@@ -43,7 +43,7 @@ const GreetingText = styled(RegularText)`
 const Username = styled(RegularText)`
   font-weight: bold;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: ${theme.grayDark};
 `;
 
